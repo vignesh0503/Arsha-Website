@@ -13,7 +13,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -24,8 +24,7 @@
     <header class="header fixed-top">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div
-          class="container d-flex justify-content-between align-items-center"
-        >
+          class="container-fluid container-xl">
           <a class="navbar-brand" href="#">A R S H A</a>
 
           <button
@@ -66,42 +65,36 @@
               <li class="nav-item navbar-item">
                 <a class="nav-link" href="#Pricing">Pricing</a>
               </li>
-              <li class="nav-item navbar-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
-                  <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Dropdown 3</a>
-                  </li>
-                </ul>
-              </li>
+               <li class="nav-item navbar-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+            
               <li class="nav-item navbar-item">
                 <a class="nav-link" href="#Contact">Contact</a>
               </li>
-              <li class="nav-item navbar-item btn-getstarted px-3">
-                <a class="nav-link" href="#">Get Started</a>
-              </li>
+              </ul>
+              
+             
             </ul>
+            <p class="nav-item navbar-item d-flex justify-content-center align-items-center px-3 m-0 btn-getstarted ">
+                <a class="nav-link" href="#">Get Started</a>
+              </p>
           </div>
+           
         </div>
       </nav>
     </header>
 
     <!-- HERO SECTION -->
-    <div class="main">
+    <div class="main" id="Home" >
       <section class="hero-section dark-background mt-5">
         <div class="container">
           <div class="row">
@@ -124,7 +117,7 @@
               <img
                 src="./assests/images/hero-img.png"
                 alt="heroimg"
-                class="img-fluid"
+                class="img-fluid vert-move"
               />
             </div>
           </div>
@@ -132,7 +125,7 @@
       </section>
     </div>
     <!-- LOGO SCROLL -->
-    <div class="container h-100">
+    <div class="container-fluid h-100">
       <div class="row align-items-center h-100">
         <div class="container rounded">
           <div class="slider">
@@ -177,12 +170,31 @@
                 alt=""
                 class="img-fluid brand-img"
               />
+              <img
+                src="./assests/images/client-1.png"
+                alt=""
+                class="img-fluid brand-img"
+              />
+              <img
+                src="./assests/images/client-2.png"
+                alt=""
+                class="img-fluid brand-img"
+              />
+              <img
+                src="./assests/images/client-3.png"
+                alt=""
+                class="img-fluid brand-img"
+              />
+              <img
+                src="./assests/images/client-4.png"
+                alt=""
+                class="img-fluid brand-img"
+              />
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <!-- ABOUT SECTION -->
 
     <section class="about-section" id="About">
@@ -236,8 +248,8 @@
 
     <!-- WHY US -->
 
-    <section class="why-us why-us-bg-color">
-      <div class="container">
+    <section class="why-us why-us-bg-color  px-5">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-md-7 col-sm-12">
             <h3 class="why-us-heading">
@@ -260,8 +272,8 @@
                     aria-expanded="true"
                     aria-controls="collapseOne"
                   >
-                    <span class="accordion-icon">01</span> Non consectetur a erat nam at lectus urna
-                    duis?
+                    <span class="accordion-icon">01</span> Non consectetur a
+                    erat nam at lectus urna duis?
                   </button>
                 </h2>
                 <div
@@ -318,8 +330,8 @@
                     aria-expanded="false"
                     aria-controls="collapseThree"
                   >
-                    <span class="accordion-icon">03</span> Dolor sit amet consectetur adipiscing elit
-                    pellentesque?
+                    <span class="accordion-icon">03</span> Dolor sit amet
+                    consectetur adipiscing elit pellentesque?
                   </button>
                 </h2>
                 <div
@@ -506,34 +518,32 @@
     <section class="call-to-action-section">
       <div class="bg-image">
         <div class="bg-color d-flex justify-content-center align-items-center">
-      <div class="container">
-        <div class="row">
-        
-          <div class="col-md-9 d-flex flex-column justify-content-center">
-            <h2 class="call-us-heading">Call To Action</h2>
-            <p class="call-us-para">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde id
-              tenetur nulla aspernatur dolor dicta similique ea esse maiores
-              reiciendis, delectus consequuntur distinctio quae explicabo
-              deserunt excepturi iste, modi in!
-            </p>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-9 d-flex flex-column justify-content-center">
+                <h2 class="call-us-heading">Call To Action</h2>
+                <p class="call-us-para">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
+                  id tenetur nulla aspernatur dolor dicta similique ea esse
+                  maiores reiciendis, delectus consequuntur distinctio quae
+                  explicabo deserunt excepturi iste, modi in!
+                </p>
+              </div>
+              <div
+                class="col-md-3 d-flex flex-column align-items-center justify-content-center"
+              >
+                <button class="btn btn-outline-primary call-btn">
+                  Call To Action
+                </button>
+              </div>
+            </div>
           </div>
-          <div
-            class="col-md-3 d-flex flex-column align-items-center justify-content-center"
-          >
-            <button class="btn btn-outline-primary call-btn">
-              Call To Action
-            </button>
-          </div>
-        
         </div>
-      </div>
-      </div>
       </div>
     </section>
 
     <!-- PortFolio -->
-    <section class="portfolio-secttion" id="Portfolio">
+   <section class="portfolio-secttion" id="Portfolio">
       <div class="container section-title">
         <h2 class="text-center">PORTFOLIO</h2>
         <p>
@@ -620,6 +630,9 @@
                     alt="image"
                     class="mt-2"
                   />
+                  <div class="img-overlay">
+                    <a href="#" class="img-link">WEB DEVE</a>
+                  </div>
                 </div>
                 <div class="image">
                   <img
@@ -773,7 +786,6 @@
         </div>
       </div>
     </section>
-
     <!-- TEAM -->
     <section class="team-section" id="Team">
       <div class="container section-title">
@@ -1040,19 +1052,72 @@
           consectetur velit
         </p>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 d-flex flex-column align-items-center justify-content-center">
-            <!-- <div class="pic"> -->
-              <img
-                src="./assests/images/team-1.jpg"
+      <div class="container " data-aos="fade-up"
+     data-aos-duration="100">
+      
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+     <div class="d-flex justify-content-center align-items-center">
+        <div class="col-12 text-center ">
+          <img
+                src="./assests/images/testimonials-1.jpg"
                 class="img-fluid client-img rounded-circle"
                 alt="client-1"
               />
-            <!-- </div> -->
+
            <h3 class="testimonals-client-name">Saul Goodman</h3>
            <p class="testimonals-client-role">Ceo & Founder</p>
-           <div class="stars d-flex">
+           <div class="stars d-flex justify-content-center">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+           </div>
+           <p class="testimonals-para text-center text-muted ">
+            <i class="fa fa-quote-left quote-icon" aria-hidden="true"></i><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, non. Deserunt non dignissimos provident tenetur eveniet fugit dolores minus, pariatur atque nisi? Odio porro nisi vero beatae doloribus consequuntur corrupti.<i class="fa fa-quote-right quote-icon" aria-hidden="true"></i></span>
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+     <div class="d-flex justify-content-center align-items-center">
+        <div class="col-12 text-center ">
+          <img
+                src="./assests/images/testimonials-2.jpg"
+                class="img-fluid client-img rounded-circle"
+                alt="client-1"
+              />
+
+           <h3 class="testimonals-client-name">Sara Wilsson</h3>
+           <p class="testimonals-client-role">Designer</p>
+           <div class="stars d-flex justify-content-center">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+           </div>
+           <p class="testimonals-para text-center text-muted ">
+            <i class="fa fa-quote-left quote-icon" aria-hidden="true"></i><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, non. Deserunt non dignissimos provident tenetur eveniet fugit dolores minus, pariatur atque nisi? Odio porro nisi vero beatae doloribus consequuntur corrupti.<i class="fa fa-quote-right quote-icon" aria-hidden="true"></i></span>
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+     <div class="d-flex justify-content-center align-items-center">
+        <div class="col-12 text-center ">
+          <img
+                src="./assests/images/testimonials-3.jpg"
+                class="img-fluid client-img rounded-circle"
+                alt="client-1"
+              />
+
+           <h3 class="testimonals-client-name">Jena Karlis</h3>
+           <p class="testimonals-client-role">Store Owner</p>
+           <div class="stars d-flex justify-content-center">
             <i class="fa fa-star" aria-hidden="true"></i>
             <i class="fa fa-star" aria-hidden="true"></i>
             <i class="fa fa-star" aria-hidden="true"></i>
@@ -1061,9 +1126,69 @@
            </div>
            <p class="testimonals-para text-center text-muted">
             <i class="fa fa-quote-left quote-icon" aria-hidden="true"></i><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, non. Deserunt non dignissimos provident tenetur eveniet fugit dolores minus, pariatur atque nisi? Odio porro nisi vero beatae doloribus consequuntur corrupti.<i class="fa fa-quote-right quote-icon" aria-hidden="true"></i></span>
-           </div>
-          </p>
+            </p>
         </div>
+      </div>
+    </div>
+      <div class="carousel-item">
+     <div class="d-flex justify-content-center align-items-center">
+        <div class="col-12 text-center ">
+          <img
+                src="./assests/images/team-1.jpg"
+                class="img-fluid client-img rounded-circle"
+                alt="client-1"
+              />
+
+           <h3 class="testimonals-client-name">Matt Bra</h3>
+           <p class="testimonals-client-role">Freelancer</p>
+           <div class="stars d-flex justify-content-center">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+           </div>
+           <p class="testimonals-para text-center text-muted">
+            <i class="fa fa-quote-left quote-icon" aria-hidden="true"></i><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, non. Deserunt non dignissimos provident tenetur eveniet fugit dolores minus, pariatur atque nisi? Odio porro nisi vero beatae doloribus consequuntur corrupti.<i class="fa fa-quote-right quote-icon" aria-hidden="true"></i></span>
+            </p>
+        </div>
+      </div>
+    </div>
+      <div class="carousel-item">
+     <div class="d-flex justify-content-center align-items-center">
+        <div class="col-12 text-center ">
+          <img
+                src="./assests/images/team-1.jpg"
+                class="img-fluid client-img rounded-circle"
+                alt="client-1"
+              />
+
+           <h3 class="testimonals-client-name">John Larson</h3>
+           <p class="testimonals-client-role">Entrepreneur</p>
+           <div class="stars d-flex justify-content-center">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+           </div>
+           <p class="testimonals-para text-center text-muted">
+            <i class="fa fa-quote-left quote-icon" aria-hidden="true"></i><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, non. Deserunt non dignissimos provident tenetur eveniet fugit dolores minus, pariatur atque nisi? Odio porro nisi vero beatae doloribus consequuntur corrupti.<i class="fa fa-quote-right quote-icon" aria-hidden="true"></i></span>
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-indicators ">
+    <button type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="carousel-btn active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+</div>
+  
+ 
       </div>
     </section>
 
@@ -1077,6 +1202,8 @@
           Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
         </p>
       </div>
+
+
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-10">
@@ -1159,7 +1286,7 @@
         </p>
       </div>
       <div class="container">
-        <div class="row gy-4">
+        <div class="row ">
           <div class="col-lg-5">
             <div class=" contact-card">
               <div class="info-item d-flex ">
@@ -1197,7 +1324,7 @@
           <div class="col-lg-7">
 <div class="contact-card">
   <form>
-<div class="row gy-4">
+<div class="row ">
   <div class="col-md-6">
     <label for="name" class="pb-2">Your Name</label>
     <input type="text" name="name" id="name-field" class="form-control" required>
@@ -1246,9 +1373,90 @@
         </div>
       </div>
      </section>
-    <script>   
+
+<!-- Footer Section -->
+
+<section class="footer-section">
+  <div class="container footer-top">
+    <div class="row ">
+      <div class="col-lg-4 col-md-6 footer-about">
+<a href="#index.html" class="d-flex align-items-center">
+  <span>ARSHA</span>
+</a>
+<div class="footer-contact pt-3">
+<p>A108 Adam Street</p>
+<p>New York, NY 535022</p>
+<p class="mt-3">
+  <strong>Phone:</strong>
+  <span> +1 5589 55488 55</span>
+</p>
+<p>
+  <strong>Email:</strong>
+  <span>info@example.com</span>
+</p>
+</div>
+      </div>
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Home</a>
+          </li>
+          <li> <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">About us</a></li>
+          <li> <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Services</a></li>
+          <li> <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Terms of service</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Web Design</a>
+          </li>
+          <li> <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Web Development</a></li>
+          <li> <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Product Management</a></li>
+          <li> <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Marketing</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-12 footer-details">
+        <h4>Follow us</h4>
+        <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+        <div class="social-links d-flex">
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-4">
+  <hr class="text-center " >
+  </div>
+  <div class="container copyright text-center mt-4">
+    <p>
+      <i class="fa fa-copyright" aria-hidden="true"></i>
+      <span>copyright</span>
+      <strong>ARSHA</strong>
+      <span> All Rights Reserved</span>
+    </p>
+    <div class="credits text-center">
+      "Designed by"
+      <a href="#">BootstrpMade</a>
+    </div>
+  </div>
+</section>
+
+    <script>
       AOS.init();
     </script>
-
   </body>
 </html>

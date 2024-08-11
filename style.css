@@ -402,42 +402,43 @@ section,
 .gallery {
   column-count: 3;
   gap: 1rem;
-  padding: 4rem;
+  padding: 5rem;
 }
-.image{
+.image {
   position: relative;
 }
 .image img {
   height: auto;
   width: 100%;
 }
-.img-overlay {
+.img-overlay a {
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #144775;
-  overflow: hidden;
+  background-color: #f8f8f8;
+  color: #37517e !important;
   width: 100%;
-  height: 0;
-  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.5s ease;
+  text-decoration: none;
 }
-
-.image img:hover .img-overlay {
-  height: 50%;
+.image:hover .img-overlay a {
+  opacity: 1;
 }
 
 .img-link {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
+  /* position: absolute;
+    top: 50%;
+    left: 50%; */
+  /* -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   color: #fff;
   text-align: center;
   font-size: 20px;
-  font-family: poppins;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: bold;
@@ -635,10 +636,8 @@ section,
   border-radius: 50% !important;
 }
 .carousel-indicators {
-    position: relative !important;
-
+  position: relative !important;
 }
-
 
 /* FAQ */
 .Frequently-section {

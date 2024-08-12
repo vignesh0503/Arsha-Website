@@ -424,9 +424,11 @@ section,
   text-align: center;
   transition: 0.5s ease;
   text-decoration: none;
+  transform: translateY(100%);
 }
 .image:hover .img-overlay a {
   opacity: 1;
+  transform: translateY(-1%);
 }
 
 .img-link {
